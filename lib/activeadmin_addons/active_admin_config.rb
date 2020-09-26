@@ -1,5 +1,6 @@
 class ActiveAdmin::Views::Pages::Base
   alias_method :original_build, :build
+  alias_method :add_classes_to_body, :build
 
   def build(*args)
     original_build(args)
